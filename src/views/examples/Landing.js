@@ -2,7 +2,7 @@
 import React from "react";
 import classnames from "classnames";
 import "./Landing.css";
-import Carrusel from "../../components/Carrusel.js"
+
 import {
   Badge,
   Button,
@@ -45,16 +45,12 @@ class Landing extends React.Component {
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250 wood-background">
-            <img
-                  alt="..."
-                  src={logo}
-                  width="12%"
-                />
+         
              
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                   <Row>
-                    <Col lg="6">
+                    <Col lg="6" className="opacid">
                       <h1 className="display-3 text-white">
                         Mach Design
                         <p>Muebleria - Publicidad - Diseño</p>
@@ -62,6 +58,14 @@ class Landing extends React.Component {
                       <p className="lead text-white">
                         Somos una empresa dedicada al diseño y fabricacion de equipamentos y mobiliarios
                       </p>
+                    </Col>
+                    <Col lg="6" className="opacid">
+                    <img
+                  alt="..."
+                  src={logo}
+                  width="45%"
+                  className=" img-center img-fluid shadow shadow-lg--hover "
+                />
                     </Col>
                   </Row>
                 </div>
@@ -94,7 +98,7 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
+                            <i className="ni ni-box-2" />
                           </div>
                           <h6 className="text-success text-uppercase">
                            Muebleria
@@ -113,9 +117,9 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-istanbul" />
+                            <i className="ni ni-notification-70" />
                           </div>
-                          <h6 className="text-prima text-uppercase">
+                          <h6 className="text-primary text-uppercase">
                             Publicidad
                           </h6>
                           <Button
@@ -133,7 +137,7 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-planet" />
+                            <i className="ni ni-image" />
                           </div>
                           <h6 className="text-warning text-uppercase">
                       Diseño
@@ -175,6 +179,7 @@ class Landing extends React.Component {
                     <p>
                     ¿Buscas muebles de alta calidad y diseño único? En nuestra empresa de mueblería, ofrecemos una amplia selección de muebles hechos a mano con los mejores materiales y diseñados por profesionales talentosos. Echa un vistazo a algunas de nuestras fotos y comprueba por ti mismo la calidad y belleza de nuestros productos.
                     </p>
+                  
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
                         <div className="d-flex align-items-center">

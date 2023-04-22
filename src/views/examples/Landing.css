@@ -1,8 +1,10 @@
+
 .wood-background {
-  background-image: url("../../assets/img/mach-design/wood.jpg");
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/img/mach-design/wood.jpg');
   background-size: cover;
   background-position: center;
-  opacity: 0.95;
- 
-
+}
+.opacity-background {
+  background-color: rgba(0, 0, 0, 0.40);
+  border-radius: 30px;
 }
