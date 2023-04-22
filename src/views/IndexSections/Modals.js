@@ -27,7 +27,6 @@ import {
   FormGroup,
   Form,
   Input,
-  InputGroupAddon,
   InputGroupText,
   InputGroup,
   Modal,
@@ -227,11 +226,11 @@ class Modals extends React.Component {
                         })}
                       >
                         <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
+                       
                             <InputGroupText>
                               <i className="ni ni-email-83" />
                             </InputGroupText>
-                          </InputGroupAddon>
+                     
                           <Input
                             placeholder="Email"
                             type="email"
@@ -250,11 +249,11 @@ class Modals extends React.Component {
                         })}
                       >
                         <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
+                      
                             <InputGroupText>
                               <i className="ni ni-lock-circle-open" />
                             </InputGroupText>
-                          </InputGroupAddon>
+                      
                           <Input
                             placeholder="Password"
                             type="password"

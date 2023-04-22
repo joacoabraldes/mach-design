@@ -22,7 +22,6 @@ import classnames from "classnames";
 import {
   FormGroup,
   Input,
-  InputGroupAddon,
   InputGroupText,
   InputGroup,
   Container,
@@ -55,11 +54,11 @@ class Inputs extends React.Component {
                   })}
                 >
                   <InputGroup className="mb-4">
-                    <InputGroupAddon addonType="prepend">
+               
                       <InputGroupText>
                         <i className="ni ni-zoom-split-in" />
                       </InputGroupText>
-                    </InputGroupAddon>
+                   
                     <Input
                       placeholder="Search"
                       type="text"
@@ -85,11 +84,11 @@ class Inputs extends React.Component {
                       onFocus={(e) => this.setState({ birthdayFocused: true })}
                       onBlur={(e) => this.setState({ birthdayFocused: false })}
                     />
-                    <InputGroupAddon addonType="append">
+             
                       <InputGroupText>
                         <i className="ni ni-zoom-split-in" />
                       </InputGroupText>
-                    </InputGroupAddon>
+                  
                   </InputGroup>
                 </FormGroup>
               </Col>
@@ -134,11 +133,9 @@ class Inputs extends React.Component {
                     })}
                   >
                     <InputGroup className="input-group-alternative mb-4">
-                      <InputGroupAddon addonType="prepend">
                         <InputGroupText>
                           <i className="ni ni-zoom-split-in" />
                         </InputGroupText>
-                      </InputGroupAddon>
                       <Input
                         placeholder="Search"
                         type="text"
@@ -177,11 +174,9 @@ class Inputs extends React.Component {
                           this.setState({ birthdayAltFocused: false })
                         }
                       />
-                      <InputGroupAddon addonType="append">
                         <InputGroupText>
                           <i className="ni ni-zoom-split-in" />
                         </InputGroupText>
-                      </InputGroupAddon>
                     </InputGroup>
                   </FormGroup>
                 </Col>

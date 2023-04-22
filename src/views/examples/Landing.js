@@ -18,6 +18,8 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classnames from "classnames";
+import "./Landing.css";
+import Carrusel from "../../components/Carrusel"
 
 // reactstrap components
 import {
@@ -28,7 +30,6 @@ import {
   CardImg,
   FormGroup,
   Input,
-  InputGroupAddon,
   InputGroupText,
   InputGroup,
   Container,
@@ -37,11 +38,12 @@ import {
 } from "reactstrap";
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
 import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
 import Download from "../IndexSections/Download.js";
+import logo from "../../assets/img/mach-design/logo.png"
+
 
 class Landing extends React.Component {
   state = {};
@@ -50,62 +52,35 @@ class Landing extends React.Component {
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
   }
+  scrollToMuebleriaSection = () => {
+    const section = document.getElementById("muebleria-section");
+    section.scrollIntoView({ behavior: "smooth" });
+  };
   render() {
     return (
       <>
-        <DemoNavbar />
+    
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
-            <section className="section section-lg section-shaped pb-250">
-              <div className="shape shape-style-1 shape-default">
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-                <span />
-              </div>
+            <section className="section section-lg section-shaped pb-250 wood-background">
+            <img
+                  alt="..."
+                  src={logo}
+                  width="12%"
+                />
+             
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                   <Row>
                     <Col lg="6">
                       <h1 className="display-3 text-white">
-                        A beautiful Design System{" "}
-                        <span>completed with examples</span>
+                        Mach Design
+                        <p>Muebleria - Publicidad - Diseño</p>
                       </h1>
                       <p className="lead text-white">
-                        The design system comes with four pre-built pages to
-                        help you get started faster. You can change the text and
-                        images and you're good to go.
+                        Somos una empresa dedicada al diseño y fabricacion de equipamentos y mobiliarios
                       </p>
-                      <div className="btn-wrapper">
-                        <Button
-                          className="btn-icon mb-3 mb-sm-0"
-                          color="info"
-                          href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="fa fa-code" />
-                          </span>
-                          <span className="btn-inner--text">Components</span>
-                        </Button>
-                        <Button
-                          className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
-                          color="default"
-                          href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                        >
-                          <span className="btn-inner--icon mr-1">
-                            <i className="ni ni-cloud-download-95" />
-                          </span>
-                          <span className="btn-inner--text">
-                            Download React
-                          </span>
-                        </Button>
-                      </div>
                     </Col>
                   </Row>
                 </div>
@@ -137,33 +112,16 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-check-bold" />
+                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                            <i className="fas fa-chair" />
                           </div>
-                          <h6 className="text-primary text-uppercase">
-                            Download Argon
+                          <h6 className="text-success text-uppercase">
+                           Muebleria
                           </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div>
-                            <Badge color="primary" pill className="mr-1">
-                              design
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              system
-                            </Badge>
-                            <Badge color="primary" pill className="mr-1">
-                              creative
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4"
-                            color="primary"
-                            href="#pablo"
-                            onClick={(e) => e.preventDefault()}
+                            color="success"
+                            onClick={this.scrollToMuebleriaSection}
                           >
                             Learn more
                           </Button>
@@ -173,31 +131,15 @@ class Landing extends React.Component {
                     <Col lg="4">
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
-                          <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
+                          <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-istanbul" />
                           </div>
-                          <h6 className="text-success text-uppercase">
-                            Build Something
+                          <h6 className="text-primary text-uppercase">
+                            Publicidad
                           </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div>
-                            <Badge color="success" pill className="mr-1">
-                              business
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              vision
-                            </Badge>
-                            <Badge color="success" pill className="mr-1">
-                              success
-                            </Badge>
-                          </div>
                           <Button
                             className="mt-4"
-                            color="success"
+                            color="primary"
                             href="#pablo"
                             onClick={(e) => e.preventDefault()}
                           >
@@ -213,24 +155,10 @@ class Landing extends React.Component {
                             <i className="ni ni-planet" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                            Prepare Launch
+                      Diseño
                           </h6>
-                          <p className="description mt-3">
-                            Argon is a great free UI package based on Bootstrap
-                            4 that includes the most important components and
-                            features.
-                          </p>
-                          <div>
-                            <Badge color="warning" pill className="mr-1">
-                              marketing
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              product
-                            </Badge>
-                            <Badge color="warning" pill className="mr-1">
-                              launch
-                            </Badge>
-                          </div>
+                          
+                        
                           <Button
                             className="mt-4"
                             color="warning"
@@ -247,7 +175,7 @@ class Landing extends React.Component {
               </Row>
             </Container>
           </section>
-          <section className="section section-lg">
+          <section className="section section-lg" id="muebleria-section">
             <Container>
               <Row className="row-grid align-items-center">
                 <Col className="order-md-2" md="6">
@@ -262,63 +190,13 @@ class Landing extends React.Component {
                     <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
                       <i className="ni ni-settings-gear-65" />
                     </div>
-                    <h3>Awesome features</h3>
+                    <h3>Muebleria</h3>
                     <p>
-                      The kit comes with three pre-built pages to help you get
-                      started faster. You can change the text and images and
-                      you're good to go.
+                    ¿Buscas muebles de alta calidad y diseño único? En nuestra empresa de mueblería, ofrecemos una amplia selección de muebles hechos a mano con los mejores materiales y diseñados por profesionales talentosos. Echa un vistazo a algunas de nuestras fotos y comprueba por ti mismo la calidad y belleza de nuestros productos.
                     </p>
-                    <ul className="list-unstyled mt-5">
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-settings-gear-65" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">
-                              Carefully crafted components
-                            </h6>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-html5" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">Amazing page examples</h6>
-                          </div>
-                        </div>
-                      </li>
-                      <li className="py-2">
-                        <div className="d-flex align-items-center">
-                          <div>
-                            <Badge
-                              className="badge-circle mr-3"
-                              color="success"
-                            >
-                              <i className="ni ni-satisfied" />
-                            </Badge>
-                          </div>
-                          <div>
-                            <h6 className="mb-0">
-                              Super friendly support team
-                            </h6>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
+                    
+                    <Carrusel/>
+                   
                   </div>
                 </Col>
               </Row>
@@ -795,11 +673,9 @@ class Landing extends React.Component {
                         })}
                       >
                         <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
                             <InputGroupText>
                               <i className="ni ni-user-run" />
                             </InputGroupText>
-                          </InputGroupAddon>
                           <Input
                             placeholder="Your name"
                             type="text"
@@ -818,11 +694,9 @@ class Landing extends React.Component {
                         })}
                       >
                         <InputGroup className="input-group-alternative">
-                          <InputGroupAddon addonType="prepend">
                             <InputGroupText>
                               <i className="ni ni-email-83" />
                             </InputGroupText>
-                          </InputGroupAddon>
                           <Input
                             placeholder="Email address"
                             type="email"

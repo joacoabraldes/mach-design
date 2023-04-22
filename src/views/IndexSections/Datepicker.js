@@ -16,13 +16,11 @@
 
 */
 import React from "react";
-// react plugin used to create datetimepicker
-import ReactDatetime from "react-datetime";
+
 
 // reactstrap components
 import {
   FormGroup,
-  InputGroupAddon,
   InputGroupText,
   InputGroup,
   Row,
@@ -97,17 +95,10 @@ class Datepicker extends React.Component {
             </small>
             <FormGroup>
               <InputGroup>
-                <InputGroupAddon addonType="prepend">
                   <InputGroupText>
                     <i className="ni ni-calendar-grid-58" />
                   </InputGroupText>
-                </InputGroupAddon>
-                <ReactDatetime
-                  inputProps={{
-                    placeholder: "Date Picker Here"
-                  }}
-                  timeFormat={false}
-                />
+
               </InputGroup>
             </FormGroup>
           </Col>
@@ -119,63 +110,22 @@ class Datepicker extends React.Component {
               <Col sm={6} xs={12}>
                 <FormGroup>
                   <InputGroup>
-                    <InputGroupAddon addonType="prepend">
+               
                       <InputGroupText>
                         <i className="ni ni-calendar-grid-58" />
                       </InputGroupText>
-                    </InputGroupAddon>
-                    <ReactDatetime
-                      inputProps={{
-                        placeholder: "Start Date"
-                      }}
-                      value={this.state.startDate}
-                      timeFormat={false}
-                      onChange={(e) =>
-                        this.handleReactDatetimeChange("startDate", e)
-                      }
-                      renderDay={(props, currentDate, selectedDate) => {
-                        let classes = props.className;
-                        classes +=
-                          this.getClassNameReactDatetimeDays(currentDate);
-                        return (
-                          <td {...props} className={classes}>
-                            {currentDate.date()}
-                          </td>
-                        );
-                      }}
-                    />
+        
+
                   </InputGroup>
                 </FormGroup>
               </Col>
               <Col sm={6} xs={12}>
                 <FormGroup>
                   <InputGroup>
-                    <InputGroupAddon addonType="prepend">
                       <InputGroupText>
                         <i className="ni ni-calendar-grid-58" />
                       </InputGroupText>
-                    </InputGroupAddon>
-                    <ReactDatetime
-                      inputProps={{
-                        placeholder: "End Date"
-                      }}
-                      className="rdtPickerOnRight"
-                      value={this.state.endDate}
-                      timeFormat={false}
-                      onChange={(e) =>
-                        this.handleReactDatetimeChange("endDate", e)
-                      }
-                      renderDay={(props, currentDate, selectedDate) => {
-                        let classes = props.className;
-                        classes +=
-                          this.getClassNameReactDatetimeDays(currentDate);
-                        return (
-                          <td {...props} className={classes}>
-                            {currentDate.date()}
-                          </td>
-                        );
-                      }}
-                    />
+                 
                   </InputGroup>
                 </FormGroup>
               </Col>
