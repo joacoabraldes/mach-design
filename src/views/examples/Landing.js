@@ -1,27 +1,8 @@
-/*!
 
-=========================================================
-* Argon Design System React - v1.1.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-design-system-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-design-system-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
-// nodejs library that concatenates classes
 import classnames from "classnames";
 import "./Landing.css";
-import Carrusel from "../../components/Carrusel"
-
-// reactstrap components
+import Carrusel from "../../components/Carrusel.js"
 import {
   Badge,
   Button,
@@ -113,7 +94,7 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-success rounded-circle mb-4">
-                            <i className="fas fa-chair" />
+                            <i className="ni ni-check-bold" />
                           </div>
                           <h6 className="text-success text-uppercase">
                            Muebleria
@@ -134,7 +115,7 @@ class Landing extends React.Component {
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
                             <i className="ni ni-istanbul" />
                           </div>
-                          <h6 className="text-primary text-uppercase">
+                          <h6 className="text-prima text-uppercase">
                             Publicidad
                           </h6>
                           <Button
@@ -194,9 +175,57 @@ class Landing extends React.Component {
                     <p>
                     ¿Buscas muebles de alta calidad y diseño único? En nuestra empresa de mueblería, ofrecemos una amplia selección de muebles hechos a mano con los mejores materiales y diseñados por profesionales talentosos. Echa un vistazo a algunas de nuestras fotos y comprueba por ti mismo la calidad y belleza de nuestros productos.
                     </p>
-                    
-                    <Carrusel/>
-                   
+                    <ul className="list-unstyled mt-5">
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-settings-gear-65" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                              Carefully crafted components
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-html5" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">Amazing page examples</h6>
+                          </div>
+                        </div>
+                      </li>
+                      <li className="py-2">
+                        <div className="d-flex align-items-center">
+                          <div>
+                            <Badge
+                              className="badge-circle mr-3"
+                              color="success"
+                            >
+                              <i className="ni ni-satisfied" />
+                            </Badge>
+                          </div>
+                          <div>
+                            <h6 className="mb-0">
+                              Super friendly support team
+                            </h6>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </Col>
               </Row>
