@@ -1,4 +1,3 @@
-
 import React from "react";
 import classnames from "classnames";
 import "./Landing.css";
@@ -15,7 +14,7 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
+  Col,
 } from "reactstrap";
 
 // core components
@@ -23,8 +22,7 @@ import CardsFooter from "components/Footers/CardsFooter.js";
 
 // index page sections
 import Download from "../IndexSections/Download.js";
-import logo from "../../assets/img/mach-design/logo.png"
-
+import logo from "../../assets/img/mach-design/logo.png";
 
 class Landing extends React.Component {
   state = {};
@@ -40,32 +38,30 @@ class Landing extends React.Component {
   render() {
     return (
       <>
-    
         <main ref="main">
           <div className="position-relative">
             {/* shape Hero */}
             <section className="section section-lg section-shaped pb-250 wood-background">
-         
-             
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                   <Row>
-                    <Col lg="6" className="opacid">
+                    <Col lg="6" className="facha-text mt-4">
                       <h1 className="display-3 text-white">
-                        Mach Design
-                        <p>Muebleria - Publicidad - Diseño</p>
+                        MACH DESIGN
+                        <p>Muebleria - Diseño - Publicidad </p>
                       </h1>
                       <p className="lead text-white">
-                        Somos una empresa dedicada al diseño y fabricacion de equipamentos y mobiliarios
+                        Somos una empresa dedicada al diseño y fabricacion de
+                        equipamentos y mobiliarios
                       </p>
                     </Col>
                     <Col lg="6" className="opacid">
-                    <img
-                  alt="..."
-                  src={logo}
-                  width="45%"
-                  className=" img-center img-fluid shadow shadow-lg--hover "
-                />
+                      <img
+                        alt="..."
+                        src={logo}
+                        width="45%"
+                        className=" img-center img-fluid shadow shadow-lg--hover "
+                      />
                     </Col>
                   </Row>
                 </div>
@@ -101,7 +97,7 @@ class Landing extends React.Component {
                             <i className="ni ni-box-2" />
                           </div>
                           <h6 className="text-success text-uppercase">
-                           Muebleria
+                            Muebleria
                           </h6>
                           <Button
                             className="mt-4"
@@ -117,10 +113,10 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                            <i className="ni ni-notification-70" />
+                            <i className="ni ni-image" />
                           </div>
                           <h6 className="text-primary text-uppercase">
-                            Publicidad
+                            Diseño
                           </h6>
                           <Button
                             className="mt-4"
@@ -137,13 +133,12 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-image" />
+                            <i className="ni ni-notification-70" />
                           </div>
                           <h6 className="text-warning text-uppercase">
-                      Diseño
+                            Publicidad
                           </h6>
-                          
-                        
+
                           <Button
                             className="mt-4"
                             color="warning"
@@ -177,9 +172,14 @@ class Landing extends React.Component {
                     </div>
                     <h3>Muebleria</h3>
                     <p>
-                    ¿Buscas muebles de alta calidad y diseño único? En nuestra empresa de mueblería, ofrecemos una amplia selección de muebles hechos a mano con los mejores materiales y diseñados por profesionales talentosos. Echa un vistazo a algunas de nuestras fotos y comprueba por ti mismo la calidad y belleza de nuestros productos.
+                      ¿Buscas muebles de alta calidad y diseño único? En nuestra
+                      empresa de mueblería, ofrecemos una amplia selección de
+                      muebles hechos a mano con los mejores materiales y
+                      diseñados por profesionales talentosos. Echa un vistazo a
+                      algunas de nuestras fotos y comprueba por ti mismo la
+                      calidad y belleza de nuestros productos.
                     </p>
-                  
+
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
                         <div className="d-flex align-items-center">
@@ -703,13 +703,13 @@ class Landing extends React.Component {
                       </p>
                       <FormGroup
                         className={classnames("mt-5", {
-                          focused: this.state.nameFocused
+                          focused: this.state.nameFocused,
                         })}
                       >
                         <InputGroup className="input-group-alternative">
-                            <InputGroupText>
-                              <i className="ni ni-user-run" />
-                            </InputGroupText>
+                          <InputGroupText>
+                            <i className="ni ni-user-run" />
+                          </InputGroupText>
                           <Input
                             placeholder="Your name"
                             type="text"
@@ -724,13 +724,13 @@ class Landing extends React.Component {
                       </FormGroup>
                       <FormGroup
                         className={classnames({
-                          focused: this.state.emailFocused
+                          focused: this.state.emailFocused,
                         })}
                       >
                         <InputGroup className="input-group-alternative">
-                            <InputGroupText>
-                              <i className="ni ni-email-83" />
-                            </InputGroupText>
+                          <InputGroupText>
+                            <i className="ni ni-email-83" />
+                          </InputGroupText>
                           <Input
                             placeholder="Email address"
                             type="email"
