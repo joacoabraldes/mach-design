@@ -49,15 +49,15 @@ class Landing extends React.Component {
                       <img
                         alt="..."
                         src={logo}
-                        width="35%"
+                        width="55%"
                         className=" img-center img-fluid shadow shadow-lg--hover "
                       />
                     </Col>
                     <Col lg="12" className="facha-text mt-5">
-                      <h1 className="display-3 text-white">
-                        <p>Muebleria - Diseño - Publicidad </p>
+                      <h1 className="display-3 text-white textito">
+                        <p className="facha-text">Muebleria - Diseño - Publicidad </p>
                       </h1>
-                      <p className="lead text-white">
+                      <p className="lead text-white facha-text">
                         Somos una empresa dedicada al diseño y fabricacion de
                         equipamentos y mobiliarios
                       </p>

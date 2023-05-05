@@ -2,7 +2,7 @@
 
 .facha-text{
   font-family: 'Old Standard TT', serif;
-  font-size: 2.5rem;
+  font-size: 30px;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -18,3 +18,4 @@
   background-color: rgba(0, 0, 0, 0.40);
   border-radius: 30px;
 }
+
