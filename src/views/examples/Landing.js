@@ -45,23 +45,22 @@ class Landing extends React.Component {
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                   <Row>
-                    <Col lg="6" className="facha-text mt-4">
+                    <Col lg="12" className="opacid">
+                      <img
+                        alt="..."
+                        src={logo}
+                        width="35%"
+                        className=" img-center img-fluid shadow shadow-lg--hover "
+                      />
+                    </Col>
+                    <Col lg="12" className="facha-text mt-5">
                       <h1 className="display-3 text-white">
-                        MACH DESIGN
                         <p>Muebleria - Diseño - Publicidad </p>
                       </h1>
                       <p className="lead text-white">
                         Somos una empresa dedicada al diseño y fabricacion de
                         equipamentos y mobiliarios
                       </p>
-                    </Col>
-                    <Col lg="6" className="opacid">
-                      <img
-                        alt="..."
-                        src={logo}
-                        width="45%"
-                        className=" img-center img-fluid shadow shadow-lg--hover "
-                      />
                     </Col>
                   </Row>
                 </div>
