@@ -11,6 +11,7 @@
 }
 .wood-background {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/img/mach-design/wood.jpg');
+  /*background: url('../../assets/img/mach-design/mach-design-wood.jpg');*/
   background-size: cover;
   background-position: center;
 }
