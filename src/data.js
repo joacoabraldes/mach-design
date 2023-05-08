@@ -1,31 +1,4 @@
 import to1 from './assets/img/mach-design/trabajo-en-obra-lanus1.png'
-import to2 from './assets/img/mach-design/trabajo-en-obra-lanus2.png'
-import to3 from './assets/img/mach-design/trabajo-en-obra-lanus3.png'
-import to4 from './assets/img/mach-design/trabajo-en-obra-lanus4.png'
-import to5 from './assets/img/mach-design/trabajo-en-obra-lanus5.png'
-import tow1 from './assets/img/mach-design/trabajo-en-obra-wilde1.png'
-import tow2 from './assets/img/mach-design/trabajo-en-obra-wilde2.png'
-import tow3 from './assets/img/mach-design/trabajo-en-obra-wilde3.png'
-
-import mmc1 from './assets/img/mach-design/mobiliarios-a-medida-cocina1.png'
-import mmc2 from './assets/img/mach-design/mobiliarios-a-medida-cocina2.png'
-import mmc3 from './assets/img/mach-design/mobiliarios-a-medida-cocina3.png'
-import mmc4 from './assets/img/mach-design/mobiliarios-a-medida-cocina4.png'
-import mmr1 from './assets/img/mach-design/mobiliarios-a-medida-racks1.png'
-import mmr2 from './assets/img/mach-design/mobiliarios-a-medida-racks2.png'
-import mmp1 from './assets/img/mach-design/mobiliarios-a-medida-placares1.png'
-import mmp2 from './assets/img/mach-design/mobiliarios-a-medida-placares2.png'
-import mmp3 from './assets/img/mach-design/mobiliarios-a-medida-placares3.png'
-import mmcc1 from './assets/img/mach-design/mobiliarios-a-medida-canillas1.png'
-import mmcc2 from './assets/img/mach-design/mobiliarios-a-medida-canillas2.png'
-
-import eci from './assets/img/mach-design/equipamientos-comerciales-itau.png'
-import ecl1 from './assets/img/mach-design/equipamientos-comerciales-locales1.png'
-import ecl2 from './assets/img/mach-design/equipamientos-comerciales-locales2.png'
-import ecs1 from './assets/img/mach-design/equipamientos-comerciales-samsung1.png'
-import ecs2 from './assets/img/mach-design/equipamientos-comerciales-samsung2.png'
-import ecv1 from './assets/img/mach-design/equipamientos-comerciales-vinotecas.png'
-import ecv2 from './assets/img/mach-design/equipamientos-comerciales-vinotecas2.png'
 
 export let arrayCard = [
     {

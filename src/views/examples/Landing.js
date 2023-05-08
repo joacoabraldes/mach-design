@@ -2,6 +2,9 @@ import React from "react";
 import classnames from "classnames";
 import "./Landing.css";
 
+
+import Gallery from "components/Gallery";
+
 import {
   Badge,
   Button,
@@ -98,6 +101,7 @@ class Landing extends React.Component {
                           <h6 className="text-success text-uppercase">
                             Muebleria
                           </h6>
+                     
                           <Button
                             className="mt-4"
                             color="success"
@@ -132,7 +136,7 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ni ni-building"></i>
+                            <i className="ni ni-notification-70" />
                           </div>
                           <h6 className="text-warning text-uppercase">
                             Publicidad
@@ -153,7 +157,7 @@ class Landing extends React.Component {
                       <Card className="card-lift--hover shadow border-0">
                         <CardBody className="py-5">
                           <div className="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                            <i className="ct-icon-briefcase" />
+                            <i className="ni ni-building"></i>
                           </div>
                           <h6 className="text-warning text-uppercase">
                             Servicios
@@ -188,7 +192,7 @@ class Landing extends React.Component {
                 <Col className="order-md-1" md="6">
                   <div className="pr-md-5">
                     <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                      <i className="ni ni-settings-gear-65" />
+                      <i className="ni ni-box-2" />
                     </div>
                     <h3>Muebleria</h3>
                     <p>
@@ -199,6 +203,7 @@ class Landing extends React.Component {
                       algunas de nuestras fotos y comprueba por ti mismo la
                       calidad y belleza de nuestros productos.
                     </p>
+
 
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
@@ -253,6 +258,7 @@ class Landing extends React.Component {
                     </ul>
                   </div>
                 </Col>
+               -
               </Row>
             </Container>
           </section>
