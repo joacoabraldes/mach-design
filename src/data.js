@@ -49,7 +49,7 @@ import senaletica1 from './assets/mach-design-imagenes/publicidad/senaletica1.jp
 import senaletica2 from './assets/mach-design-imagenes/publicidad/senaletica2.jpeg'
 
 
-export let arrayCard = [
+export let arrayImagenes = [
     {
         titulo: "Diseño",
         imagenes: [

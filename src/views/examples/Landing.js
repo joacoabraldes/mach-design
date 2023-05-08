@@ -2,7 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import "./Landing.css";
 
-
+import arrayImagenes from "../../data"
 import Gallery from "components/Gallery";
 import ImageGrid from "components/ImageGrid";
 import {
@@ -190,14 +190,7 @@ class Landing extends React.Component {
           <section className="section section-lg" id="muebleria-section">
             <Container>
               <Row className="row-grid align-items-center">
-                <Col className="order-md-2" md="6">
-                  <img
-                    alt="..."
-                    className="img-fluid floating"
-                    src={require("assets/img/theme/promo-1.png")}
-                  />
-                </Col>
-                <Col className="order-md-1" md="6">
+                <Col  md="6" lg="6">
                   <div className="pr-md-5">
                     <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
                       <i className="ni ni-box-2" />
@@ -212,7 +205,6 @@ class Landing extends React.Component {
                       calidad y belleza de nuestros productos.
                     </p>
 
-                    <ImageGrid categories={muebleriaImages} />
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
                         <div className="d-flex align-items-center">
@@ -266,7 +258,9 @@ class Landing extends React.Component {
                     </ul>
                   </div>
                 </Col>
-               -
+                <Col  md="6" lg="6">
+                  <ImageGrid categories={muebleriaImages} />
+                </Col>
               </Row>
             </Container>
           </section>
