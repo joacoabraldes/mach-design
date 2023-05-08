@@ -52,7 +52,7 @@ import senaletica2 from './assets/mach-design-imagenes/publicidad/senaletica2.jp
 export let arrayCard = [
     {
         titulo: "Diseño",
-        productos: [
+        imagenes: [
             {
                 id:1,
                 img: equipEvento,
@@ -108,7 +108,7 @@ export let arrayCard = [
     },
     {
         titulo: "Muebleria",
-        productos: [
+        imagenes: [
           
             {
                 id:13,
@@ -186,7 +186,7 @@ export let arrayCard = [
     },
     {
         titulo: "Publicidad",
-        productos: [
+        imagenes: [
             {
                 id:31,
                 img: corporeas
