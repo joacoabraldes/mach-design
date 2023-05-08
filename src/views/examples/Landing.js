@@ -4,7 +4,7 @@ import "./Landing.css";
 
 
 import Gallery from "components/Gallery";
-
+import ImageGrid from "components/ImageGrid";
 import {
   Badge,
   Button,
@@ -26,7 +26,14 @@ import CardsFooter from "components/Footers/CardsFooter.js";
 // index page sections
 import Download from "../IndexSections/Download.js";
 import logo from "../../assets/img/mach-design/logo.png";
-
+const muebleriaImages = [{
+  images: [
+    "https://picsum.photos/id/1018/1000/600/",
+    "https://picsum.photos/id/1018/250/150/",
+],
+  name: "Muebleria",
+}]
+  
 class Landing extends React.Component {
   state = {};
   componentDidMount() {
@@ -38,6 +45,7 @@ class Landing extends React.Component {
     const section = document.getElementById("muebleria-section");
     section.scrollIntoView({ behavior: "smooth" });
   };
+
   render() {
     return (
       <>
@@ -204,7 +212,7 @@ class Landing extends React.Component {
                       calidad y belleza de nuestros productos.
                     </p>
 
-
+                    <ImageGrid categories={muebleriaImages} />
                     <ul className="list-unstyled mt-5">
                       <li className="py-2">
                         <div className="d-flex align-items-center">
