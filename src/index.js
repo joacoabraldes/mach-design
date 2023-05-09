@@ -25,6 +25,7 @@ import "assets/scss/argon-design-system-react.scss?v1.1.0";
 
 import Index from "views/Index.js";
 import Landing from "views/examples/Landing.js";
+import Construccion from "views/examples/Construccion";
 
 import Profile from "views/examples/Profile.js";
 
@@ -45,6 +46,12 @@ root.render(
         path="/profile-page"
         exact
         render={(props) => <Profile {...props} />}
+      />
+
+<Route
+        path="/construccion"
+        exact
+        render={() => <Construccion />}
       />
       
       <Redirect to="/" />
