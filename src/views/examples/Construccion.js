@@ -22,7 +22,7 @@ class Construccion extends React.Component {
       <>
         <main ref="main">
           <div className="position-relative">
-            <section className="section section-lg section-shaped pb-250 woodd-background">
+            <section className="section section-lg section-shaped pb-80 woodd-background">
               <Container className="py-lg-md d-flex">
                 <div className="col px-0">
                   <Row>
@@ -36,16 +36,16 @@ class Construccion extends React.Component {
                     </Col>
                     <Col lg="6" className="fachaa-text mt-5">
                       <h1 className="display-3 text-white textito">
-                        <p className="fachaa-text">
+                        <p className="fachaa-text mb-5">
                           Muebleria - Diseño - Publicidad{" "}
                         </p>
                       </h1>
-                      <p className="lead text-white fachaaa-text mt-0 mb-5">
+                      <p className="lead text-white fachaaa-text mt-5 mb-5">
                         Somos una empresa dedicada al diseño y fabricacion de
                         equipamentos y mobiliarios
                       </p>
 
-                      <h1 className="fachaaaa-text mt-5"> EN BREVE PODRA DISFRUTAR DE NUESTROS TRABAJOS </h1>
+                     
                     </Col>
                   </Row>
                 </div>
@@ -74,7 +74,9 @@ class Construccion extends React.Component {
                 <div className="icon icon-lg icon-shape icon-shape-success shadow rounded-circle align-items-center mr-5">
                   <i class="ni ni-settings"></i>
                 </div>
-                <h1>EN CONSTRUCCION!</h1>
+                <h1 className="fachaaaa-text mt-3 mb-1" >EN CONSTRUCCION!</h1>
+
+                <h1 className="fachaaaa-textito mt-3"> EN BREVE PODRA DISFRUTAR DE NUESTROS TRABAJOS </h1>
              
               </Row>
             </Container>

@@ -2,17 +2,18 @@
 
 .fachaa-text{
   font-family: 'Old Standard TT', serif;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
   color: #fff;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .fachaa-text{
   font-family: 'Old Standard TT', serif;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -22,14 +23,23 @@
 
 .fachaaaa-text{
   font-family: 'Old Standard TT', serif;
-  font-size: 20px;
+  font-size: 40px;
   font-weight: 700;
-  color: #fff;
+  color: black;
   text-align: center;
   margin-top: 5px;
   margin-bottom: 5px;
-  font-weight: bold;
-}
+  }
+
+  .fachaaaa-textito{
+    font-family: 'Old Standard TT', serif;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    }
+
 .woodd-background {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/img/mach-design/wood.jpg');
   /*background: url('../../assets/img/mach-design/mach-design-wood.jpg');*/
