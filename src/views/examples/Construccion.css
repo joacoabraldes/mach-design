@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT:ital@1&display=swap');
+
+.fachaa-text{
+  font-family: 'Old Standard TT', serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fachaa-text{
+  font-family: 'Old Standard TT', serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fachaaaa-text{
+  font-family: 'Old Standard TT', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.woodd-background {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../assets/img/mach-design/wood.jpg');
+  /*background: url('../../assets/img/mach-design/mach-design-wood.jpg');*/
+  background-size: cover;
+  background-position: center;
+}
+.opacity-backgroundd {
+  background-color: rgba(0, 0, 0, 0.40);
+  border-radius: 30px;
+}
+
